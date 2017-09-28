@@ -1,6 +1,12 @@
-# Mandatory Import
+# Default Imports
 import pandas as pd
-path = "..data/ipl_dataset.csv"
+# Path has been given to you already to use in function.
+path = "../data/ipl_dataset.csv"
+
+# Solution
 def read_csv_data_to_df(path):
 
-    return pd.read_csv(path)
+    # Write your code here
+    ipl_df =
+
+    return ipl_df
