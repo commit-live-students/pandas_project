@@ -10,6 +10,5 @@ ipl_df = read_csv_data_to_df("../data/ipl_dataset.csv")
 def create_bowler_filter(bowler):
 
     # Write your code here
-    expected_bowler =
 
-    return expected_bowler
+    return

@@ -8,7 +8,8 @@ ipl_df = read_csv_data_to_df("../data/ipl_dataset.csv")
 
 # Solution
 def get_unique_venues():
+    # Write your code here
+    venues =
 
-        # Write your code here
-        venues =
-        return venues
+    return venues
+

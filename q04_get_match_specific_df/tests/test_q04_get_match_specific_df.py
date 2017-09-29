@@ -10,6 +10,6 @@ class TestGet_match_specific_df(TestCase):
         path = "../data/ipl_dataset.csv"
         ipl_df = read_csv_data_to_df(path)
         match_code = 598057
-        expected = (ipl_df[ipl_df['match_code'] == match_code])
-        actual = get_match_specific_df(match_code)
-        self.assertTrue(expected.shape == actual.shape)
+        expected_shape = (241,24)
+        actual_shape = get_match_specific_df(match_code).shape
+        self.assertTrue(expected_shape == actual_shape)

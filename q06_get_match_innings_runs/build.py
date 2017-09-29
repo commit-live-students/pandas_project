@@ -10,7 +10,7 @@ ipl_df = read_csv_data_to_df("../data/ipl_dataset.csv")
 
 def get_match_innings_runs():
 
-    # write you code here
-    expected_runs =
+    # Write your code here
+    innings_runs =
 
-    return expected_runs
+    return innings_runs

@@ -8,8 +8,8 @@ ipl_df = read_csv_data_to_df("../data/ipl_dataset.csv")
 
 # Solution
 def get_run_counts():
+
     # Write your code here
+    runs_counts =
 
-    expected_counts =
-
-    return expected_counts
+    return runs_counts

@@ -7,6 +7,5 @@ path = "../data/ipl_dataset.csv"
 def read_csv_data_to_df(path):
 
     # Write your code here
-    ipl_df =
 
-    return ipl_df
+    return

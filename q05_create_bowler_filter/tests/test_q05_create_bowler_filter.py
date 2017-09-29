@@ -11,6 +11,6 @@ class TestCreate_bowler_filter(TestCase):
         path = "../data/ipl_dataset.csv"
         ipl_df = read_csv_data_to_df(path)
         bowler = 'I Sharma'
-        expected = (ipl_df['bowler'] == bowler)
-        actual = create_bowler_filter(bowler)
+        expected = 1599
+        actual = create_bowler_filter(bowler).sum()
         self.assertTrue(np.all(expected == actual))
