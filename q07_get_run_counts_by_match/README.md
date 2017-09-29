@@ -15,17 +15,26 @@ So what we want is a dataframe with
 
 Use the pivot_table method to achieve this.
 
-Cmon, let's do it.
+C'mon, let's do it.
 
 Create a function that answers this question.
 The function should :
 
 * Be named get_runs_counts_by_match
-* Accept no parameters
 * Work on the previously created ipl_df object
-* Should return a dataframe with 3 columns: match_code, inning, runs
 
-_HINTS_ : 
+## PARAMETERS 
+No parameters
+
+## RETURNS
+- df: Data about runs every inning in every match. `type: DataFrame`
+
+The dataset must have the following 3 columns:
+- `match_code`
+- `inning`
+- `runs`
+
+_**HINTS**_ : 
 
 * When calling the pivot_table() function, you can simply pass the string 'count' to the parameter aggfunc to use count as aggregator
 * Do not call reset_index() on the dataframe returned from the pivot table.
