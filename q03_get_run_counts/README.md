@@ -11,9 +11,9 @@ Create a function that answers this question.
 - Work on the previously created `ipl_df` object
 - Should return a Series with runs as the index and their frequencies (counts) as the values
 
-##Parameters
+## Parameters
 No parameters
 
 
-##Returns
+## Returns
 - runs_count: runs scored and count of occurences `dtype: Series`
