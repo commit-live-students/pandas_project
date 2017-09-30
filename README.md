@@ -1,4 +1,4 @@
-# Python Day04-Pandas Assignments
+# Data manipulation with pandas assignments
 
 ## What have we learnt so far?
 * Understand the need for Pandas in Data Science
