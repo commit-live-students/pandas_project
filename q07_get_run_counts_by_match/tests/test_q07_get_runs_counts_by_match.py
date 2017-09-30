@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append(os.path.join(os.path.dirname(os.curdir), '..'))
+sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 import numpy as np
 from q07_get_run_counts_by_match.build import get_runs_counts_by_match
 from q01_read_csv_data_to_df.build import read_csv_data_to_df
