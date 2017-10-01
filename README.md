@@ -15,3 +15,5 @@ You will become very proficient with the powertool of pandas - the DataFrame.
 We will continue to manipulate the famous IPL dataset but this time we will experience the power
 of pandas DataFrames!
 
+By completing this project you have an opportunity to win 750 points
+
