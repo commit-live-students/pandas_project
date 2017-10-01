@@ -8,7 +8,7 @@ from unittest import TestCase
 
 class TestGet_match_innings_runs(TestCase):
     def test_get_match_innings_runs(self):
-        path = "../data/ipl_dataset.csv"
+        path = "./data/ipl_dataset.csv"
         ipl_df = read_csv_data_to_df(path)
         bowler = 'I Sharma'
         expected_innigs_runs = 165858
