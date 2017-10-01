@@ -7,7 +7,7 @@ from unittest import TestCase
 
 class TestGet_unique_venues(TestCase):
     def test_get_unique_venues(self):
-        path = "../data/ipl_dataset.csv"
+        path = "./data/ipl_dataset.csv"
         ipl_df = read_csv_data_to_df(path)
         venues = get_unique_venues()
 

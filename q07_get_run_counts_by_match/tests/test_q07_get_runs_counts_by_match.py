@@ -7,7 +7,7 @@ from unittest import TestCase
 
 class TestGet_runs_counts_by_match(TestCase):
     def test_get_runs_counts_by_match(self):
-        path = "../data/ipl_dataset.csv"
+        path = "./data/ipl_dataset.csv"
         ipl_df = read_csv_data_to_df(path)
         bowler = 'I Sharma'
         expected = (577,7)

@@ -8,7 +8,7 @@ from unittest import TestCase
 
 class TestCreate_bowler_filter(TestCase):
     def test_create_bowler_filter(self):
-        path = "../data/ipl_dataset.csv"
+        path = "./data/ipl_dataset.csv"
         ipl_df = read_csv_data_to_df(path)
         bowler = 'I Sharma'
         expected = 1599
