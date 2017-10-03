@@ -2,7 +2,7 @@ import sys, os
 sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 import numpy as np
 from q06_get_match_innings_runs.build import get_match_innings_runs
-from q01_read_csv_data_to_df.build import read_csv_data_to_df
+from greyatomlib.pandas.q01_read_csv_data_to_df.build import read_csv_data_to_df
 from unittest import TestCase
 
 

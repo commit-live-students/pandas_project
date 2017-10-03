@@ -6,7 +6,7 @@ import pandas
 
 class TestRead_csv_data_to_df(TestCase):
     def test_read_csv_data_to_df(self):
-        path = "./data/ipl_dataset.csv"
+        path = "data/ipl_dataset.csv"
         df = read_csv_data_to_df(path)
 
         self.assertIsInstance(df, pandas.DataFrame)
