@@ -8,7 +8,7 @@ We learnt about `groupby` in class. Now, you will have to use it to help us fetc
 You can use previously created function (read_csv_data_to_df) to import csv into a dataframe.
 
 ### Parameters
-The function tkes no Parameters
+The function takes no Parameters
 
 ### Returns
 - df: Data about runs every inning in every match. `type: DataFrame`
