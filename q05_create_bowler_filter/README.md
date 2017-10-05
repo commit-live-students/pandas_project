@@ -1,14 +1,15 @@
 # Filter the data for a given `bowler`
-If we ever wanted to access data for a particular bowler, we will have to first create
-a filter (a boolean series) to filter the data. Can you write that filter?
+If we ever wanted to access data for a particular bowler, we will have to first create a filter (a boolean series). Can you write that filter?
 
-Note that you must return a boolean series filter
-not the records that satisfy the filter
+_Note:_ that you must return a boolean series (`Ture` if the condition is satisfied and `False` otherwise) filter, not the records that satisfy the filter.
 
-Create a function `create_bowler_filter` 
-Work on the previously created `ipl_df` object
+## Wrtie a function `create_bowler_filter` that
+- given a bowler's name, returns a boolian Series, which has `True` value for rows that contain the bowler's name in the "bowler" column, and `False` otherwise.
+
+You can use previously created function (read_csv_data_to_df) to import csv into a dataframe.
 
 ## Parameters
 - bowler: Name of the bowler `dtype: str`
+
 ## Returns
 - filter: The filter to extract data `type: Series, dtype: bool`
