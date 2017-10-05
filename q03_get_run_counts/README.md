@@ -5,6 +5,8 @@ In a single delivery, a batsman can score minimim of 0 runs and maximum of 6 run
 ## Write a function `get_run_counts` that
 - Returns a pandas Series with runs as the index and their frequencies (counts) as the values
 
+You can use previously created function (`read_csv_data_to_df`) to import csv into a dataframe.
+
 ### Parameters
 The function takes no parameters
 
