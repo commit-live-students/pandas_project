@@ -7,7 +7,7 @@ Create a function that finds all the venues where matches were played.
 ## Write a function `get_unique_venues` that
 - Returns an array of all unique venues (not cities) where matches were played
 
-You can work on the previously created function (`read_csv_data_to_df`) to import csv into dataframe.
+You can use previously created function (`read_csv_data_to_df`) to import csv into a dataframe.
 
 ### Parameters
 The function doesn't take any parameters.
