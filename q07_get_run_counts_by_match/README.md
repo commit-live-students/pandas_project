@@ -13,7 +13,7 @@ In a previous question, we calculated the counts of runs to understand which of 
 * Has
   * match_code as the row index (rows)
   * 0, 1,...6 runs (scored by batsman) as columns
-  * count of such deliveries as the aggregated values of the dataframe
+  * count of frequency as the aggregated values of the dataframe
 * You can use the `pivot_table` method to achieve this.
 * You can use previously created function (read_csv_data_to_df) to import csv into a dataframe.
 
