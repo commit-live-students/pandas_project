@@ -17,10 +17,10 @@ In a previous question, we calculated the counts of runs to understand which of 
 * You can use the `pivot_table` method to achieve this.
 * You can use previously created function (read_csv_data_to_df) to import csv into a dataframe.
 
-## PARAMETERS 
+### PARAMETERS 
 No parameters
 
-## RETURNS
+### RETURNS
 - df: Pivot table with match_code as index, runs columns and frequency as values. `type: DataFrame`
 
 _**HINTS**_ : 
