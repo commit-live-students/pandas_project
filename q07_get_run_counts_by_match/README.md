@@ -1,6 +1,6 @@
 # Count of runs per match
 
-Whoa!! That was too much work and you did great!
+Whoa!! That was a lot of work and you did great!
 
 CONGRATULATIONS!!
 
@@ -8,31 +8,20 @@ Now, let's get ready for the final hurdle!!
 
 In a previous question, we calculated the counts of runs to understand which of those are scored the most. Now, we wish to see if this distribution is followed in all matches, so we can find "outlier" matches: those with unusually good/bad bowling/batting.
 
-So what we want is a dataframe with
-* match_code as the row index (rows)
-* 0, 1,...6 runs (scored by batsman) as columns
-* count of such deliveries as the aggregated values of the dataframe
+## Write a function `get_runs_counts_by_match` that
 
-Use the pivot_table method to achieve this.
-
-C'mon, let's do it.
-
-Create a function that answers this question.
-The function should :
-
-* Be named get_runs_counts_by_match
-* Work on the previously created ipl_df object
+* Has
+  * match_code as the row index (rows)
+  * 0, 1,...6 runs (scored by batsman) as columns
+  * count of such deliveries as the aggregated values of the dataframe
+* You can use the `pivot_table` method to achieve this.
+* You can use previously created function (read_csv_data_to_df) to import csv into a dataframe.
 
 ## PARAMETERS 
 No parameters
 
 ## RETURNS
-- df: Data about runs every inning in every match. `type: DataFrame`
-
-The dataset must have the following 3 columns:
-- `match_code`
-- `inning`
-- `runs`
+- df: Pivot table with match_code as index, runs columns and frequency as values. `type: DataFrame`
 
 _**HINTS**_ : 
 
