@@ -6,5 +6,4 @@ s= set()
 #Solution
 def get_unique_venues():
     df = pd.read_csv(ipl_df_path)
-    venues = df['city'].unique()
-    return venues
+    return df['venue'].unique()
