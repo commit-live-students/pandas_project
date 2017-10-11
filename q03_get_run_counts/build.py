@@ -9,4 +9,5 @@ ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
 
 def get_run_counts():
     runs=ipl_df['runs'].value_counts()
+    print(runs)
     return runs
