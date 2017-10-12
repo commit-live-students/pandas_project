@@ -1,0 +1,1 @@
+{"stats": {"passes": 1, "skipped": 0, "encoding": "UTF-8", "errors": 0, "failures": 0, "total": 1}, "results": [{"classname": "pandas_project.q05_create_bowler_filter.tests.test_q05_create_bowler_filter:TestCreate_bowler_filter", "type": "success", "name": "test_create_bowler_filter", "time": 0.43791913986206055}]}
