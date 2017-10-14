@@ -5,9 +5,8 @@ from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_da
 ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
 
 # Solution
+def get_match_innings_runs():
+    column_list = ['match_code','inning','runs']
+    return ipl_df[column_list].groupby(['match_code','inning'],as_index=False).sum()['runs']
 
-#Q5
-def create_bowler_filter(bowler):
-    return ipl_df['bowler'] == bowler
-
-create_bowler_filter('I Sharma')
+get_match_innings_runs().sum()
