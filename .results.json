@@ -1,0 +1,1 @@
+{"stats": {"passes": 1, "skipped": 0, "encoding": "UTF-8", "errors": 0, "failures": 0, "total": 1}, "results": [{"classname": "pandas_project.q06_get_match_innings_runs.tests.test_q06_get_match_innings_runs:TestGet_match_innings_runs", "type": "success", "name": "test_get_match_innings_runs", "time": 0.5414600372314453}]}
