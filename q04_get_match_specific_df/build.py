@@ -7,10 +7,7 @@ ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
 
 
 def get_match_specific_df(match_code):
-    ipl_df['match_code'] = ipl_df.match_code.astype(str)
-    new_df = ipl_df.set_index('match_code')
-    match = str(match_code)
-    df = new_df.loc[match]
+    df = ipl_df[ipl_df['match_code'] == match_code]
     return df
 
 
