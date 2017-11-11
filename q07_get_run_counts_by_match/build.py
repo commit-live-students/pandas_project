@@ -6,6 +6,7 @@ ipl_df = pd.read_csv("/home/darshind/Workspace/code/pandas_project/data/ipl_data
 
 # Solution
 def get_runs_counts_by_match():
-    filter_data = [['match_code','runs','inning']]
-    return pd.pivot_table(filter_data,columns = 'runs',index ='match_code',aggfunc='count')
-print get_runs_counts_by_match()
+    df = ipl_df.pivot_table(values = 'bowler',columns = 'runs',index ='match_code',aggfunc='count')
+    #filter_data = [['match_code','runs','inning']]
+    return df
+#get_runs_counts_by_match()
