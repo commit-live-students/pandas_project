@@ -8,5 +8,5 @@ import numpy as np
 # Solution
 def get_match_innings_runs():
     df=pd.DataFrame(ipl_df[['match_code','inning','runs']])
-    new_df=df.pivot_table(['runs'],index=['match_code','inning'],aggfunc=np.sum)
+    new_df=df.groupby(['match_code','inning']).sum()
     return new_df
