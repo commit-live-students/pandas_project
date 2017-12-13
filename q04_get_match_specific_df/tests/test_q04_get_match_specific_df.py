@@ -12,4 +12,4 @@ class TestGet_match_specific_df(TestCase):
         match_code = 598057
         expected_shape = (241,24)
         actual_shape = get_match_specific_df(match_code).shape
-        self.assertTrue(expected_shape == actual_shape)
+        self.assertEqual(expected_shape , actual_shape,"The return shape does not match the expected shape")

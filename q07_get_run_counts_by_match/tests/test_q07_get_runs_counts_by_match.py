@@ -6,10 +6,10 @@ from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_da
 from unittest import TestCase
 
 class TestGet_runs_counts_by_match(TestCase):
-    def test_get_runs_counts_by_match(self):
+    def test_get_runs_counts_by_match_return_shape(self):
         path = "./data/ipl_dataset.csv"
         ipl_df = read_csv_data_to_df(path)
         bowler = 'I Sharma'
         expected = (577,7)
         actual = get_runs_counts_by_match()
-        self.assertTrue(actual.shape == expected)
+        self.assertEqual(actual.shape , expected, "The expected shape does not match with the returned shape")
