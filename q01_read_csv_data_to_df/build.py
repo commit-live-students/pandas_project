@@ -1,8 +1,10 @@
-# Default Imports
-import pandas as pd
 
-# Path has been given to you already to use in function.
+import pandas as pd
+from pandas import Series, DataFrame
+
 path = "data/ipl_dataset.csv"
 
-# Solution
-
+def read_csv_data_to_df (path):
+    #df_ipl_data = DataFrame.from_csv(path)
+    df_ipl_data = pd.read_csv(path)
+    return df_ipl_data
