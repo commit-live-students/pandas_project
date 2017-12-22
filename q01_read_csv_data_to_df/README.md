@@ -8,7 +8,7 @@ formats: `.csv`
 * Returns a Pandas DataFrame when given a path to a CSV file
 
 ### Parameters
-- path: path of the file to be loaded `dtype: str`
+- path: path of the file to be loaded
 
 ### Returns
 - DataFrame with Data from the CSV file. `dtype: DataFrame`
