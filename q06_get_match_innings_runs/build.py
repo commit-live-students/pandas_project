@@ -8,7 +8,7 @@ from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_da
 ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
 
 # Solution
-def get_match_inning_runs():
+def get_match_innings_runs():
     #df = pd.DataFrame(ipl_df)
     grp_match = ipl_df[['match_code', 'inning', 'runs']].groupby(['match_code', 'inning', 'runs'])['runs'].sum()
 
@@ -16,4 +16,4 @@ def get_match_inning_runs():
     return grp_match
     #return group_matches[['match_code', 'inning', 'runs']].aggregate(np.sum)
 
-print get_match_inning_runs()
+print get_match_innings_runs()
