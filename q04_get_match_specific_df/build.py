@@ -8,12 +8,15 @@ ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
 
 # Solution
 def get_match_specific_df(match_code):
+
+
     df = ipl_df.loc[ipl_df['match_code'] == match_code]
     return df
-
-    #df = DataFrame(ipl_df)
-    #dff = df['match_code']
+    # or below code
+    '''df = DataFrame(ipl_df)
+    dff = df['match_code']
     #print type(dff)
-    #df_new = df.loc[df['match_code'] == match_code]
+    df_new = df.loc[df['match_code'] == match_code]
     #print type(ipl_df)
-#print get_match_specific_df(392203)
+    return df_new'''
+print get_match_specific_df(392203)
