@@ -7,14 +7,13 @@ from pandas import Series, DataFrame
 ipl_df = read_csv_data_to_df('./data/ipl_dataset.csv')
 
 def get_match_specific_df(match_code):
-    #print ipl_df
-    #print np.dtype(ipl_df)
     
-    #data = DataFrame(ipl_df)
-    #df = data[data['match_code'] == match_code]
-    #return df
-
-    df = ipl_df.loc[ipl_df['match_code'] == match_code]
+    data = DataFrame(ipl_df)
+    df = data[data['match_code'] == match_code]
     return df
+    
+    #also works because of as same indexing properties
+    #df = ipl_df.loc[ipl_df['match_code'] == match_code]
+    #return df
     
 
