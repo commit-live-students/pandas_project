@@ -8,11 +8,10 @@ from pandas import Series
 ipl_df = read_csv_data_to_df('./data/ipl_dataset.csv')
 
 def create_bowler_filter(bowler):
-    #print ipl_df
     bowlers = ipl_df['bowler']
-    #print bowlers
     bowler = np.where((bowlers==bowler),True,False)
     bowler = Series(bowler)
     return bowler
-
+    
+#create_bowler_filter('I Sharma')
 
