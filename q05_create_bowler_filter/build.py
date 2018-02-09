@@ -17,19 +17,7 @@ def create_bowler_filter(bowler):
 
     return df1
 
-    #a = ipl_df['runs']
-    #b = ipl_df['bowler']
-    #b = ipl_df['bowler'] == bowler
 
-    #s = Series(a,index = b)
-    #s.fillna(ipl_df['bowler'])
-    #s = (s == bowler)
-    #s1 = Series(s,index = a)
-    #s1 = (s1 == bowler)
 
-    #sss = a
-    #s1 = Series(index = sss )
-    #s1 == 'CK Kapugedera'
-    #return s
 
-#print create_bowler_filter('M Muralitharan')
+print create_bowler_filter('M Muralitharan')
