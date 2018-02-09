@@ -13,7 +13,7 @@ def get_runs_counts_by_match():
     runs_df = ipl_df[['match_code', 'runs']]
     runs_df['count'] = 1
     runs_pivot = runs_df.pivot_table('count', aggfunc=np.sum, index='match_code', columns='runs').fillna('NA')
-    #runs_pivot = runs_df.pivot_table('count', aggfunc=np.sum, index='match_code', columns='runs')
+    #runs_pivot = runs_df.pivot_table('count', aggfunc='count', index='match_code', columns='runs')
     return runs_pivot
 
 
