@@ -9,7 +9,7 @@ ipl_df = read_csv_data_to_df('./data/ipl_dataset.csv')
 def get_runs_counts_by_match():
     
     
-    data = ipl_df.loc[:, ['match_code','runs']]   
-    df = data.pivot_table(data, aggfunc=np.sum, index='match_code', columns=ipl_df.loc[:,'runs'])
+    data = ipl_df.loc[:, ['runs']]   
+    df = data.pivot_table(data, aggfunc=np.sum, index=ipl_df.loc[:,'match_code'], columns=ipl_df.loc[:,'runs'])
     return df
 
