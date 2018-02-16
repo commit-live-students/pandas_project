@@ -10,5 +10,5 @@ path = 'data/ipl_dataset.csv'
 path = 'data/ipl_dataset.csv'
 def read_csv_data_to_df(data):
     read_csv_data_to_df = pd.read_csv(path)
+    return(read_csv_data_to_df)
 print(read_csv_data_to_df)
-
