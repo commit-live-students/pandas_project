@@ -11,4 +11,4 @@ def get_runs_counts():
     runs_count = d2['runs'].value_counts()
     return runs_count
 
-get_runs_counts()
+print get_runs_counts()
