@@ -1,3 +1,5 @@
+import numpy as np
+import pandas as pd
 # Default imports
 from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_data_to_df
 
@@ -5,3 +7,5 @@ from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_da
 ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
 
 # Solution
+def create_bowler_filter(bowler):
+    return ipl_df.bowler == bowler
