@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 from q02_get_unique_values.build import get_unique_venues
-from inspect import getargspec
+from inspect import getfullargspec
 from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_data_to_df
 from unittest import TestCase
 

@@ -2,7 +2,7 @@ import sys, os
 sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 from unittest import TestCase
 from q01_read_csv_data_to_df.build import read_csv_data_to_df
-from inspect import getargspec
+from inspect import getfullargspec
 import pandas
 
 path = "data/ipl_dataset.csv"
@@ -11,7 +11,7 @@ df = read_csv_data_to_df(path)
 class TestRead_csv_data_to_df(TestCase):
 
 	def test_read_csv_data_to_df_args(self):
-		arg = getargspec(read_csv_data_to_df).args
+		arg = getfullargspec(read_csv_data_to_df).args
 		self.assertEqual(len(arg),1 ,"Expected argument(s) %d, Given %d" % (1,len(arg)) )
 
 	def test_read_csv_data_to_df_return_instance(self):
