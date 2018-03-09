@@ -5,10 +5,9 @@ from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_da
 ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
 import pandas as pd
 
-def get_runs_counts():
+def get_run_counts():
 
-    d2 = pd.DataFrame(ipl_df['runs'])
-    runs_count = d2['runs'].value_counts()
+    runs_count = ipl_df['runs'].value_counts(sort= True)
     return runs_count
 
-print get_runs_counts()
+get_run_counts()
