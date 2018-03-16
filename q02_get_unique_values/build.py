@@ -6,5 +6,5 @@ ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
 
 #Solution
 def get_unique_venues():
-    df1 = pd.Series.unique(ipl_df['venue'])
-    return df1
+    u_values = ipl_df['venue'].unique()
+    return u_values
