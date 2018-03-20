@@ -8,10 +8,6 @@ from pandas import Series, DataFrame
 ipl_df = read_csv_data_to_df('./data/ipl_dataset.csv')
 # Solution
 def get_match_specific_df(match_code):
-    code = ipl_df['match_code']
-    return(code)
-print()
+    return ipl_df[ipl_df['match_code'] == match_code]
 
-    
-
-
+print(get_match_specific_df(598057))
