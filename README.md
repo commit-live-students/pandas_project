@@ -16,3 +16,6 @@ You will become proficient with the power-tool of pandas - the DataFrame.
 ## About the dataset
 We will continue to manipulate the IPL dataset but this time we will experience the power
 of pandas DataFrames!
+
+[ipl_dataset](https://raw.githubusercontent.com/commit-live-students/pandas_project/master/data/ipl_dataset.csv)
+[weather_2012](https://raw.githubusercontent.com/commit-live-students/pandas_project/master/data/weather_2012.csv)
