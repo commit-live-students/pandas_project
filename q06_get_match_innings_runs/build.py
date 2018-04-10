@@ -5,7 +5,12 @@ from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_da
 ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
 
 # Solution
+def get_match_innings_runs():
+    temp = ipl_df.groupby(['match_code','inning']).sum()
+
+    return temp
 
 
-
-
+print get_match_innings_runs()
+print type(get_match_innings_runs())
+print get_match_innings_runs().sum()
