@@ -5,7 +5,8 @@ from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_da
 ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
 
 # Solution
-
-
-
-
+def get_match_innings_runs():
+    ipl_df[['match_code', 'inning', 'runs']]
+    runs = ipl_df.pivot_table(index='match_code', values=['runs'], aggfunc=sum)
+    return runs
+print(get_match_innings_runs())
