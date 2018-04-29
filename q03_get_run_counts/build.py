@@ -1,8 +1,8 @@
-# Default Imports
-from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_data_to_df
+import pandas as pd
 
-# You have been given the dataset already in 'ipl_df'.
-ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
+def get_run_counts():
+    ipl_data=pd.read_csv('./data/ipl_dataset.csv')
+    ans=ipl_data['runs'].value_counts()
+    return ans
 
-# Solution
 
