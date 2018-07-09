@@ -5,4 +5,9 @@ import pandas as pd
 path = "data/ipl_dataset.csv"
 
 # Solution
+def read_csv_data_to_df(path):
+    rcsv = pd.read_csv(path)
+    print type(rcsv)
+    return rcsv
 
+read_csv_data_to_df(path)
