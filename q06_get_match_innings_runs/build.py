@@ -6,6 +6,7 @@ ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
 
 # Solution
 
-
-
-
+def get_match_innings_runs():
+    match_innings = ipl_df.groupby(['match_code' , 'inning'])['runs'].sum()
+    return match_innings
+get_match_innings_runs()
