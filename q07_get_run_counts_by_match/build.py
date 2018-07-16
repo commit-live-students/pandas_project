@@ -5,3 +5,6 @@ from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_da
 ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
 
 # Solution
+
+def get_runs_counts_by_match():
+    return ipl_df.pivot_table('batsman',aggfunc='count',index='match_code',columns='runs')
