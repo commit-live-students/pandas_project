@@ -6,3 +6,8 @@ path = "data/ipl_dataset.csv"
 
 # Solution
 
+def read_csv_data_to_df(path):
+
+    df = pd.DataFrame(pd.read_csv(path,dtype=str))
+
+    return df
