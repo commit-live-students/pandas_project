@@ -7,6 +7,7 @@ ipl_df = read_csv_data_to_df('./data/ipl_dataset.csv')
 
 # Function define
 def create_bowler_filter(bowler):
+    ''' filter for bowler '''
     return ipl_df['bowler'] == bowler
 
 # Function call
