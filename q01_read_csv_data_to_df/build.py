@@ -1,8 +1,16 @@
-# Default Imports
 import pandas as pd
+import numpy as np
 
-# Path has been given to you already to use in function.
-path = "data/ipl_dataset.csv"
+str_path='data/ipl_dataset.csv'
 
-# Solution
+def read_csv_data_to_df(path):
+	pd_df= pd.read_csv(path,  delimiter=',' )
+	return pd_df
+
+
+
+df=read_csv_data_to_df(str_path)
+print (df.shape)
+
+
 
