@@ -18,6 +18,10 @@ def get_unique_venues():
     
     return venues
 
+var = get_unique_venues()
+print(var)
+
+
 
 
 
