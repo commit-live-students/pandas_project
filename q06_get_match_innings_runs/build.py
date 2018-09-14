@@ -9,6 +9,7 @@ ipl_df = read_csv_data_to_df('data/ipl_dataset.csv')
 import pandas as pd
 from pandas import Series
 def get_match_innings_runs():
+    ''' #Solution 1
     df = pd.DataFrame({'match_code':[],'innings':[],'runs':[]})
     matches_array = ipl_df.match_code.unique()
     for i in range(len(matches_array)):
@@ -20,8 +21,16 @@ def get_match_innings_runs():
         #print(list1)
         df = df.append(dict1,ignore_index=True)
         df = df.append(dict2,ignore_index=True)
-    return df.runs
-get_match_innings_runs().sum()
+    #return df.runs
+    
+    #Solution 2
+    a = ipl_df.groupby('match_code')[['match_code','inning','runs']]
+    #(a.sum())['runs']
+    #return (a.sum())['runs']'''
+    
+    #Solution 3:
+    return ipl_df.groupby(['match_code','inning'])[['runs']].sum()
+
 
 
 
