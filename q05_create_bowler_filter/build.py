@@ -7,10 +7,12 @@ ipl_df = read_csv_data_to_df('./data/ipl_dataset.csv')
 import pandas as pd
 # Solution
 def create_bowler_filter(bowler):
-    ipl_df = pd.read_csv('./data/ipl_dataset.csv')
+    '''Solution 1
     div = lambda x: x == ipl_df['bowler'][:]
-    return div(bowler)
-
+    return div(bowler)'''
+    #Solution 2:
+    return (ipl_df['bowler']==bowler)
+#create_bowler_filter('I Sharma')
 
 
 
