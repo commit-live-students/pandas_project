@@ -1,11 +1,17 @@
-# Default Imports
-from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_data_to_df
+import pandas as pd
 
-# You have been given dataset already in 'ipl_df'.
-ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
+def read_csv_data_to_df(path) :
+    df=pd.read_csv(path)
+    data=pd.DataFrame(df)
+    return data
 
-# Solution
+def get_match_innings_runs():
+    datas=read_csv_data_to_df('data/ipl_dataset.csv');
+    output=datas.groupby('inning').sum()['runs']
+   # print(output)
+    return output.sum()
 
+print(get_match_innings_runs())
 
 
 
