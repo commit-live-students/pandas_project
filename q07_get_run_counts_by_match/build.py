@@ -9,8 +9,11 @@ import pandas as pd
 # Solution
 def get_runs_counts_by_match():
     
-    df=pd.pivot_table(ipl_df,index='match_code',columns='runs',aggfunc='count')
+    df=pd.pivot_table(ipl_df,index='match_code',columns='runs',aggfunc='count').iloc[:,0:7]
     
     return df
+
+
+
 
 
