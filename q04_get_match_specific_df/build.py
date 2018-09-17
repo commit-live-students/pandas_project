@@ -10,7 +10,7 @@ import pandas as pd
 
 def get_match_specific_df(match_code):
     
-    df1=ipl_df.groupby(match_code).get_group(392203)
+    df1=ipl_df.groupby('match_code').get_group(598057)
     
     return df1
     
