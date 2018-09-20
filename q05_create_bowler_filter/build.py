@@ -10,7 +10,8 @@ ipl_df = read_csv_data_to_df('./data/ipl_dataset.csv')
 def create_bowler_filter(bowler):
     data= ipl_df['bowler']==bowler
     return data
-create_bowler_filter('MM Patel')
+#Tests
+# create_bowler_filter('MM Patel')
 
 
 
