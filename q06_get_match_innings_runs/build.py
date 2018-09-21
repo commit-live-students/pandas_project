@@ -8,12 +8,12 @@ ipl_df = read_csv_data_to_df('data/ipl_dataset.csv')
 #pd.set_option('display.max_columns', 30)
 def get_match_innings_runs():
     
-    df = (ipl_df.groupby(['match_code', 'inning']).sum())['runs']
+    df = (ipl_df.groupby(['match_code', 'inning']).sum())
 
     return df
 
 
-get_match_innings_runs()
+get_match_innings_runs().sort_values(ascending = False)
 
 
 
