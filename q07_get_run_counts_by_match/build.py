@@ -8,8 +8,10 @@ ipl_df = read_csv_data_to_df('./data/ipl_dataset.csv')
 # Solution
 def get_runs_counts_by_match():
     
+    # create new dataframe of following columns
     ipl_df1 = ipl_df[['match_code','runs','batsman']]
     
+    # create a pivot table 
     pivot_df = pd.pivot_table(ipl_df1, values = ['runs'], index = ['match_code'], columns = ['runs'], aggfunc = 'count')
     
     return pivot_df
