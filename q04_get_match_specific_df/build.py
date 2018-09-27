@@ -9,6 +9,6 @@ def get_match_specific_df(match_code):
     ipl_df_mc=ipl_df[ipl_df['match_code']==match_code]
     return ipl_df_mc
 
-ipl_df[ipl_df['match_code']==392203].head()
+
 
 
