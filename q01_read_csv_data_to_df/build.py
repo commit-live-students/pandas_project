@@ -10,9 +10,6 @@ def read_csv_data_to_df(path):
     return ipl_df
 
 
-import pandas as pd
-path = 'data/ipl_dataset.csv'
-ipl_df=pd.read_csv(path)
-ipl_df.head()
+
 
 
