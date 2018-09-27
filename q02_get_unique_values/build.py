@@ -7,8 +7,7 @@ ipl_df = read_csv_data_to_df('data/ipl_dataset.csv')
 
 #Solution
 def get_unique_venues():
-    unique_venues = ipl_df['venue'].unique()
-    return unique_venues
-ipl_df['venue'].nunique()
+    return ipl_df['venue'].unique()
+
 
 
