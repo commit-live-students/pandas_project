@@ -1,10 +1,4 @@
-# Data manipulation with pandas assignments
-
-## What have we learnt so far?
-* Understand the need for Pandas in Data Science
-* Data Manipulation and Transformations
-* Pivot Tables and Group By
-* Merging Data
+# Data manipulation with pandas 
 
 ## Why solve complete this project?
 
