@@ -1,7 +1,16 @@
-# Default imports
-from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_data_to_df
+#%load q05_create_bowler_filter/build.py
+import pandas as pd
+import numpy as np
 
-# You have been given dataset already in 'ipl_df'.
-ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
+ifl_df=pd.read_csv('./data/ipl_dataset.csv')
 
-# Solution
+def create_bowler_filter(bowler):
+
+    bl=ifl_df['bowler']
+
+    return bl==bowler
+
+
+    
+
+
