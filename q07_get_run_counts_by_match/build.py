@@ -12,8 +12,5 @@ def get_runs_counts_by_match():
     df=pd.pivot_table(df1,index='match_code',columns='runs',aggfunc=len)
     return df
 
-df1=ipl_df[['match_code','runs']]
-df=pd.pivot_table(df1,index='match_code',columns='runs',aggfunc=len)
-df
 
 
