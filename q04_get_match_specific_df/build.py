@@ -5,3 +5,6 @@ ipl_df = read_csv_data_to_df("./data/ipl_dataset.csv")
 
 # Solution
 
+def get_match_specific_df(match_code):
+    df1 = ipl_df.loc[ipl_df['match_code'] == match_code]
+    return df1
