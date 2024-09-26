@@ -1,6 +1,20 @@
-from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_data_to_df
+import pandas as pd
+import numpy as np
 
-# You have been given the dataset already in 'ipl_df'.
-ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
+str_path='data/ipl_dataset.csv'
 
-#Solution
+def read_csv_data_to_df(path):
+	pd_df= pd.read_csv(path,  delimiter=',' )
+	return pd_df
+
+def get_unique_venues():
+	npArray = np.array (df['venue'].unique())
+	return npArray
+	
+	
+df=read_csv_data_to_df(str_path)
+print (df.shape)
+npArray_Venues = get_unique_venues()
+print (type(npArray_Venues))
+
+
