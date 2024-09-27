@@ -1,6 +1,18 @@
-from greyatomlib.pandas_project.q01_read_csv_data_to_df.build import read_csv_data_to_df
+#%load q02_get_unique_values/build.py
 
-# You have been given the dataset already in 'ipl_df'.
-ipl_df = read_csv_data_to_df("data/ipl_dataset.csv")
+import pandas as pd
 
-#Solution
+path='./data/ipl_dataset.csv'
+
+def get_unique_venues():
+    df=pd.read_csv(path)
+
+    venue=df.venue.unique()
+
+    return venue
+
+
+
+
+
+
